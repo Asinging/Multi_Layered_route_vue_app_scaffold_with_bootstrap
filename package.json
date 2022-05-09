@@ -1,0 +1,62 @@
+{
+  "name": "test",
+  "version": "1.0.3",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@adamdehaven/vue-custom-tooltip": "^1.4.4",
+    "@andresouzaabreu/vue-data-table": "3.2.2",
+    "@popperjs/core": "^2.11.2",
+    "@vue/cli-plugin-babel": "4.1.1",
+    "axios": "^0.25.0",
+    "core-js": "^3.10.1",
+    "css-loader": "^4.3.0",
+    "localforage": "^1.10.0",
+    "popper.js": "^1.16.1",
+    "regenerator-runtime": "^0.13.9",
+    "vue": "^2.6.12",
+    "vue-localforage": "^0.2.5",
+    "vue-router": "^3.5.1",
+    "vue-toastification": "^1.7.11",
+    "vue-ui-preloader": "^1.2.1",
+    "vuetrend": "^0.3.4",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.7",
+    "@vue/cli-plugin-eslint": "~4.5.7",
+    "@vue/cli-service": "^4.5.15",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-vue": "^7.0.1",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.3",
+    "vue-cli-plugin-vuetify": "~2.0.7",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.12",
+    "vuetify-loader": "^1.6.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

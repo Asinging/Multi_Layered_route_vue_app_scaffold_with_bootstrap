@@ -1,0 +1,99 @@
+@import "~vuetify/src/styles/styles.sass";
+// Sidebar //
+$drawer-items-padding: 32px !default;
+$navigation-drawer-mini-variant-width: 80px !important;
+
+// Layout //
+$body-bg: #f6f7ff !default;
+$content-padding: 24px;
+
+// Colors //
+// $primary:           #536DFE;
+$primary: #217dbb;
+$secondary: #ff5c93;
+$error: #ff4081;
+$warning: #ffc260;
+$success: #3cd4a0;
+$info: #9013fe;
+// $text-color:        #6e6e6e;
+$text-color: #217dbb;
+$text-grey: #b9b9b9;
+$title-grey: #4a4a4a;
+
+$card-title-color: $text-color;
+
+// Typography //
+$h1-font-size: 1rem !default; // 28px
+$h2-font-size: 2rem !default; // 24px
+$h3-font-size: 1.64rem !default; // 22px
+$h4-font-size: 1.5rem !default; // 20px
+$h5-font-size: 1.285rem !default; // 16px
+$h6-font-size: 1.142rem !default; // 14px
+// $h1-font-size: 14px !default; // 28px
+// $h2-font-size: 12px !default; // 24px
+// $h3-font-size: 10px !default; // 22px
+// $h4-font-size: 8px !default; // 20px
+// $h5-font-size: 6px !default; // 16px
+// $h6-font-size: 5px !default; // 14px
+// $body-1-font-size: 4px !default;
+// $body-2-font-size: 4px !default;
+// $subtitle-1-font-size: 4px !default;
+// $subtitle-2-font-size: 4px !default;
+// $font-size-root: 12px !default;
+
+// Card //
+$card-shadow: none !important;
+// $card-shadow: 0 3px 11px 0 #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A;
+
+// Buttons //
+$button-shadow: 0px 3px 11px 0px #e8eafc, 0 3px 3px -2px #b2b2b21a,
+  0 1px 8px 0 #9a9a9a1a;
+$vs-colors: (
+  lightest: rgba(60, 60, 60, 0.26),
+  light: rgba(60, 60, 60, 0.5),
+  dark: #333,
+  darkest: rgba(0, 0, 0, 0.15),
+) !default;
+
+//  Global Component Variables
+$vs-component-line-height: 1.4 !default;
+$vs-component-placeholder-color: inherit !default;
+
+//  Active State
+
+//  Disabled State
+$vs-state-disabled-bg: rgb(248, 248, 248) !default;
+$vs-state-disabled-color: map_get($vs-colors, "light") !default;
+$vs-state-disabled-controls-color: map_get($vs-colors, "light") !default;
+$vs-state-disabled-cursor: not-allowed !default;
+
+//  Borders
+$vs-border-width: 1px !default;
+$vs-border-style: solid !default;
+$vs-border-radius: 4px !default;
+$vs-border-color: map_get($vs-colors, "lightest") !default;
+
+//  Component Controls: Clear, Open Indicator
+$vs-controls-color: map_get($vs-colors, "light") !default;
+$vs-controls-size: 1 !default;
+$vs-controls-deselect-text-shadow: 0 1px 0 #fff !default;
+
+//  Selected
+$vs-selected-bg: #f0f0f0 !default;
+$vs-selected-border-color: $vs-border-color !default;
+$vs-selected-border-style: $vs-border-style !default;
+$vs-selected-border-width: $vs-border-width !default;
+
+//  Dropdown
+$vs-dropdown-z-index: 1000 !default;
+$vs-dropdown-min-width: 160px !default;
+$vs-dropdown-max-height: 350px !default;
+$vs-dropdown-box-shadow: 0px 3px 6px 0px map_get($vs-colors, "darkest") !default;
+// list
+$vs-dropdown-bg: #fff !default;
+$btn-font-weight: 200;
+$list-item-title-font-size: 10px !default;
+$list-item-dense-title-font-size: 10px !default;
+$list-item-dense-title-font-weight: 10px !default;
+
+$autocomplete-focused-input: 10px !default;

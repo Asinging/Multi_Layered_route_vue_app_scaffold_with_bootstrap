@@ -1,0 +1,49 @@
+@import "../../styles/app.scss";
+
+.v-main__wrap {
+  // padding: 70px $content-padding $content-padding;
+  padding: 10px !important;
+  padding-top: 92px !important;
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  // background:red !important;
+
+  // @media  only screen and (min-width:780px) {
+  //     .mobile{
+  //       display:none;
+  //     }
+
+  //   };
+  //   @media  only screen and (max-width:780px) {
+  //     .desk{
+  //       display:none;
+  //     }
+
+  //   };
+
+  list {
+    text-decoration: none !important;
+  }
+}
+a:hover {
+  text-decoration: none !important;
+}
+.page {
+  // position:fixed;
+  width: inherit;
+}
+.content {
+  background-color: $body-bg;
+  .rounded_card {
+    border-radius: 12px !important  ;
+    -webkit-border-radius: 12px !important  ;
+    -moz-border-radius: 12px !important  ;
+    -ms-border-radius: 12px !important  ;
+    -o-border-radius: 12px !important  ;
+  }
+
+  // animation for the entire page
+}
+.page {
+  width: inherit;
+}
