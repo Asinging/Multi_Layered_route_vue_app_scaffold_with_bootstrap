@@ -2,32 +2,15 @@
 "use strict";
 import Vue from "vue";
 import axios from "axios";
-import Router from "@/Routes.js";
-// import Store from "@/store/index"//
-
-let token;
-let x = localStorage.getItem("token");
-token = x ? JSON.parse(x) : null;
-
-// axios.defaults.baseURL = process.env.baseURl || process.env.apiUrl || '';
-
 axios.defaults.headers.post["Content-Type"] =
   "application/x-www-form-urlencoded";
 
 axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
 
-axios.defaults.headers.common["Authorization"] = `Bearer ${
-  token ? token.tok : ""
-}`;
-// axios.defaults.headers.common['domain'] = window.location.origin
-
 let config = {
-  // headers: {
-  //   'Authorization': `Bearer ${token}`,
   // // },
   baseURL: process.env.VUE_APP_ROOT_API,
-  // baseURL: "https://api.jiffye.org/api/v1",  //this is for nellyval database
-  // transformRequest: [],
+
   withCredentials: false, // Check cross-site Access-Control
   // domain: window.location.origin
 };
@@ -54,18 +37,6 @@ _axios.interceptors.response.use(
   function (error) {
     // Do something with response error
 
-    if (error.response.status == 401) {
-      // debugger
-      if (error.response.data.message == "Unauthenticated.") {
-        //  alert("Access expired! Pls Login To Gain Regain Access")
-        // localStorage.removeItem("token");
-        // localStorage.removeItem("userLogin");
-        // Store.dispatch("LOGOUT");
-        Router.push("/login");
-      } // Router.push("/login")
-
-      return Promise.reject(error);
-    }
     return;
   }
 );
