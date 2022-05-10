@@ -4,7 +4,7 @@ import Router from "vue-router";
 import { adminRoute } from "./adminRoute";
 import { userRoute } from "./userRoute";
 
-import Home from "@/Pages/UserEnd/Home";
+import Index from "@/Pages/UserEnd/index";
 
 import Error from "@/Pages/Error/Error";
 
@@ -33,23 +33,23 @@ const router = new Router({
       component: () => import("@/Pages/UserEnd/UserAuth/Login/login.vue"),
     },
     //  amdmin Sections
-    // {
-    //   path: "/admin",
-    //   name: "AdminLogin",
-    //   component: () => import("@/Pages/AdminEnd/AdminAuth/Login/login.vue"),
-    //   children: [...adminRoute],
-    // },
+    {
+      path: "/adminLogin",
+      name: "AdminLogin",
+      component: () => import("@/Pages/AdminEnd/AdminAuth/Login/login.vue"),
+    },
     {
       path: "/admin",
       name: "AdminIndex",
+      redirects: { name: "Dashboard" },
       component: () => import("@/components/layout/DashboardLayout.vue"),
       children: [...adminRoute],
     },
 
     {
       path: "/",
-      name: "Home",
-      component: Home,
+      name: "Index",
+      component: Index,
       meta: {
         isAuthenticated: true,
       },

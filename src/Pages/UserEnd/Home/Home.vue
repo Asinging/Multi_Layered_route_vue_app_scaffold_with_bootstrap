@@ -15,14 +15,16 @@
           <button
             type="submit"
             class="btn btn-primary rounded submit px-3 text-center"
-            @click="toAdmin"
+            @click="toUserAbout"
           >
-            Admin? login
+            About User
           </button>
         </div>
       </div>
     </div>
+    <router-view></router-view>
   </section>
+
   <!-- </div> -->
 </template>
 
@@ -37,15 +39,12 @@ export default {
   computed: {},
   beforeMount() {},
   beforeDestroy() {
-    localStorage.removeItem("loginDetails");
+    // localStorage.removeItem("loginDetails");
   },
   methods: {
-    toAdmin() {
-      // this.$router.push({
-      //   name: "AdminLogin",
-      // });
+    toUserAbout() {
       this.$router.push({
-        name: "AdminIndex",
+        name: "UserAbout",
       });
     },
   },

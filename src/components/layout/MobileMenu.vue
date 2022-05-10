@@ -28,16 +28,22 @@
     </base-dropdown>
 
     <li class="nav-item">
-      <a class="nav-link" href="#pablo">
+      <a class="nav-link disable" @click="logout">
         <span class="no-icon">Log out</span>
       </a>
     </li>
   </ul>
 </template>
 <script>
-  export default {
-    name: 'mobile-menu'
-  }
+export default {
+  name: "mobile-menu",
+  methods: {
+    logout() {
+      this.$router.push({
+        name: "AdminLogin",
+      });
+    },
+  },
+};
 </script>
-<style>
-</style>
+<style></style>

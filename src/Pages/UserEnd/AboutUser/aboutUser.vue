@@ -8,6 +8,21 @@
             <h1 class="heading-section">
               This the official about user page !!
             </h1>
+            <h1 class="heading-section">
+              This the official about user page !!
+            </h1>
+            <h1 class="heading-section">
+              This the official about user page !!
+            </h1>
+          </div>
+          <div class="form-group">
+            <button
+              type="submit"
+              class="btn btn-primary rounded submit px-3 text-center"
+              @click="home"
+            >
+              Back to Home
+            </button>
           </div>
         </div>
       </div>
@@ -27,12 +42,12 @@ export default {
   computed: {},
   beforeMount() {},
   beforeDestroy() {
-    localStorage.removeItem("`loginDetails`");
+    // localStorage.removeItem("`loginDetails`");
   },
   methods: {
-    toAdmin() {
+    home() {
       this.$router.push({
-        name: "AdminIndex",
+        name: "Home",
       });
     },
   },

@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Dashboard</a>
+      <span class="navbar-brand disabled" @click="toDashboard">Dashboard</span>
       <button
         type="button"
         class="navbar-toggler navbar-toggler-left"
@@ -35,7 +35,7 @@
             <a class="dropdown-item" href="#">Another notification</a>
           </base-dropdown>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a class="nav-link disabled">
               <i class="nc-icon nc-zoom-split"></i>
               <span class="d-lg-block">&nbsp;Search</span>
             </a>
@@ -73,9 +73,14 @@ export default {
     };
   },
   methods: {
+    toDashboard() {
+      this.$router.push({
+        name: "Dashboard",
+      });
+    },
     logout() {
       this.$router.push({
-        name: "adminLogin",
+        name: "AdminLogin",
       });
     },
     capitalizeFirstLetter(string) {
@@ -100,6 +105,6 @@ export default {
 .disabled {
   pointer-events: auto;
   cursor: pointer !important;
-  color: #1d74f7;
+  color: #80cfee;
 }
 </style>
