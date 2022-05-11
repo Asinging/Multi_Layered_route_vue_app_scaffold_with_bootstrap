@@ -14,8 +14,6 @@
 </template>
 
 <script>
-import config from "@/config";
-
 export default {
   name: "Error",
   data() {
