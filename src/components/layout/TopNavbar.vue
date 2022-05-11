@@ -28,11 +28,11 @@
               <b class="caret"></b>
               <span class="notification">5</span>
             </template>
-            <a class="dropdown-item" href="#">Notification 1</a>
-            <a class="dropdown-item" href="#">Notification 2</a>
-            <a class="dropdown-item" href="#">Notification 3</a>
-            <a class="dropdown-item" href="#">Notification 4</a>
-            <a class="dropdown-item" href="#">Another notification</a>
+            <a class="dropdown-item disabled">Notification 1</a>
+            <a class="dropdown-item disabled">Notification 2</a>
+            <a class="dropdown-item disabled">Notification 3</a>
+            <a class="dropdown-item disabled">Notification 4</a>
+            <a class="dropdown-item disabled">Another notification</a>
           </base-dropdown>
           <li class="nav-item">
             <a class="nav-link disabled">
@@ -43,13 +43,13 @@
         </ul>
         <ul class="navbar-nav ml-auto">
           <base-dropdown title="Dropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something</a>
+            <a class="dropdown-item disabled">Action</a>
+            <a class="dropdown-item disabled">Another action</a>
+            <a class="dropdown-item disabled">Something</a>
+            <a class="dropdown-item disabled">Another action</a>
+            <a class="dropdown-item">Something</a>
             <div class="divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
+            <a class="dropdown-item">Separated link</a>
           </base-dropdown>
           <li class="nav-item">
             <a class="nav-link disabled" @click="logout"> Log out </a>

@@ -8,7 +8,7 @@ export const userRoute = [
     component: () => import("@/Pages/UserEnd/AboutUser/aboutUser.vue"),
   },
   {
-    path: "userHome",
+    path: "",
     name: "Home",
     meta: {
       isAuthenticated: true,
