@@ -5,7 +5,7 @@
 
 // // A plugin file where you could reimport clickOutside from './directives/click-ouside.js';gister globaimport clickOutside from './directives/click-ouside.js';l directives
 // import GlobalDirectives from "./globalDirectives";
-import clickOutside from "./directives/click-ouside.js";
+import clickOutside from "./Directives/click-ouside.js";
 // // Sidebar on the right. Used as a local plugin in DashboardLayout.vue
 import SideBar from "./components/SidebarPlugin";
 
@@ -13,6 +13,7 @@ import SideBar from "./components/SidebarPlugin";
 import "bootstrap/dist/css/bootstrap.css";
 import "./assets/sass/light-bootstrap-dashboard.scss";
 import "./assets/css/demo.css";
+``;
 import BaseDropdown from "./components/BaseDropdown.vue";
 
 /**

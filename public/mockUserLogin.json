@@ -1,0 +1,34 @@
+{
+  "api/v1/test": {
+    "message": "hello world"
+  }, 
+  "/api/v1/admin/login": {
+    "response": {
+       "responseStatus":"1",
+       "responseCode":"ok",
+       "message":"you have successfully login"
+      },
+       "/api/v1/admin/logout": {
+    "response": {
+       "responseStatus":"0",
+       "responseCode":"ok",
+       "message":"you have log out successfully"
+      }
+   }
+},
+   "/api/v1/user/login": {
+   "response": {
+       "responseStatus":"1",
+       "responseCode":"ok",
+       "message":"you have successfully login"
+      },
+       "api/v1/user/logout": {
+    "response": {
+       "responseStatus":"0",
+       "responseCode":"ok",
+       "message":"you have log out successfully"
+      }
+   }
+}
+ 
+}

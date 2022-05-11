@@ -12,5 +12,5 @@ export default new Vuex.Store({
     AdminAuth,
     UserAuth,
   },
-  namespace: true, // toggle this on if you wish to concisely namespace your app state
+  
 });

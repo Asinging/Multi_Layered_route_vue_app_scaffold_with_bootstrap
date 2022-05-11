@@ -109,16 +109,33 @@ export default {
   beforeMount() {},
   methods: {
     submitDetails() {
-      localStorage.setItem(
-        "adminLoginDetails",
-        JSON.stringify({
-          user: this.username,
-          pass: this.password,
+      // localStorage.setItem(
+      //   "adminLoginDetails",
+      //   JSON.stringify({
+      //     user: this.username,
+      //     pass: this.password,
+      //   })
+      // );
+      let dis = this;
+      let apiService = new FormData();
+      apiService.append("user", dis.username);
+      apiService.append("pass", dis.password);
+      this.$store
+        .dispatch("AdminAuth/LOGIN", { query: apiService })
+        .then((resp) => {
+          if (resp) {
+            btToast.fire({
+              icon: "success",
+              title: "Login Successful",
+            });
+            this.$router.push({
+              name: "Dashboard",
+            });
+          }
         })
-      );
-      this.$router.push({
-        name: "Dashboard",
-      });
+        .catch((err) => {
+          this.$swal("Opss", "An Error Encounted", "error");
+        });
     },
   },
 };

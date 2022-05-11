@@ -39,8 +39,14 @@ export default {
   name: "mobile-menu",
   methods: {
     logout() {
-      this.$router.push({
-        name: "AdminLogin",
+      this.$store.dispatch("AdminAuth/LOGOUT").then((resp) => {
+        btToast.fire({
+          icon: "!Done",
+          title: "Successfully Logout ",
+        });
+        this.$router.push({
+          name: "AdminLogin",
+        });
       });
     },
   },

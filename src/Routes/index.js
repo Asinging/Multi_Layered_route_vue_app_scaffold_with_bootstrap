@@ -41,7 +41,10 @@ const router = new Router({
     {
       path: "/admin",
       name: "AdminIndex",
-      redirects: { name: "Dashboard" },
+      redirect: { name: "Dashboard" },
+      meta: {
+        isAuthenticated: true,
+      },
       component: () => import("@/components/layout/DashboardLayout.vue"),
       children: [...adminRoute],
     },
@@ -79,14 +82,14 @@ router.beforeEach((to, from, next) => {
       }
     } else if (JSON.parse(localStorage.getItem("loginDetails"))) {
       if (to.path.includes("/admin")) {
-        next("/admin");
+        next("/adminLogin");
       } else {
         next();
         return;
       }
     } else {
       if (to.path.includes("/admin")) {
-        next("/admin");
+        next("/adminLogin");
       } else {
         next("/login");
       }

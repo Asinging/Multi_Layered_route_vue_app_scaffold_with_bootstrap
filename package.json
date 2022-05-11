@@ -19,6 +19,7 @@
     "regenerator-runtime": "^0.13.9",
     "vue": "^2.6.12",
     "vue-router": "^3.5.1",
+    "vue-sweetalert2": "^5.0.5",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
@@ -51,4 +52,6 @@
     "last 2 versions",
     "not dead"
   ]
+
+  
 }

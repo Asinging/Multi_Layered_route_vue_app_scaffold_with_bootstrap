@@ -6,13 +6,13 @@ axios.defaults.headers.post["Content-Type"] =
   "application/x-www-form-urlencoded";
 
 axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
+axios.defaults.withCredentials = true;
 
 let config = {
-  // // },
-  baseURL: process.env.VUE_APP_ROOT_API,
+  // baseURL: process.env.VUE_APP_ROOT_API,
+  baseURL: "http://localhost:8000/api/v1/",
 
   withCredentials: false, // Check cross-site Access-Control
-  // domain: window.location.origin
 };
 const _axios = axios.create(config);
 
